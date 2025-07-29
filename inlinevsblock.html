@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Block vs Inline Elements</title>
+    <style>
+        .block {
+            background-color: #b3e5fc;
+            margin: 8px 0;
+            padding: 8px;
+            border: 1px solid #0288d1;
+        }
+        .inline {
+            background-color: #ffe082;
+            padding: 2px 6px;
+            border: 1px solid #ffb300;
+            margin: 0 2px;
+            display: inline;
+        }
+        .container {
+            margin-bottom: 24px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 24px;
+        }
+        h2 {
+            margin-top: 32px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Block vs Inline Elements</h1>
+
+    <div class="container">
+        <h2>Block-level Elements</h2>
+        <div class="block">&lt;div&gt; Block-level div &lt;/div&gt;</div>
+        <p class="block">&lt;p&gt; Block-level paragraph &lt;/p&gt;</p>
+        <h3 class="block">&lt;h3&gt; Block-level heading &lt;/h3&gt;</h3>
+        <ul class="block">
+            &lt;ul&gt; Block-level unordered list
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+        </ul>
+        <pre class="block">&lt;pre&gt; Block-level preformatted text &lt;/pre&gt;</pre>
+    </div>
+
+    <div class="container">
+        <h2>Inline Elements</h2>
+        <span class="inline">&lt;span&gt; Inline span &lt;/span&gt;</span>
+        <a href="#" class="inline">&lt;a&gt; Inline anchor &lt;/a&gt;</a>
+        <strong class="inline">&lt;strong&gt; Inline strong &lt;/strong&gt;</strong>
+        <em class="inline">&lt;em&gt; Inline em &lt;/em&gt;</em>
+        <code class="inline">&lt;code&gt; Inline code &lt;/code&gt;</code>
+    </div>
+
+    <div class="container">
+        <h2>Inline Elements Inside Block-level Element</h2>
+        <p class="block">
+            This is a <span class="inline">span</span>, an <a href="#" class="inline">anchor</a>, and <strong class="inline">strong</strong> text inside a paragraph.
+        </p>
+    </div>
+</body>
+</html>
